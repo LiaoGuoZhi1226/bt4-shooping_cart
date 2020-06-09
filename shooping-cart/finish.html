@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Camping's Shop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-campground"></i>
+            Camping's Shop</a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-transparent dropdown-toggle btn-cart" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart text-dark fa-2x"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <!--dropdown 放在nav裡面不會自動計算位置-->
+            <div class="dropdown-menu dropdown-menu-right" style="min-width:300px">
+                <div class="px-4 py-3">
+                    <table class="table table-sm">
+                        <tbody>
+                            <h6 class="text-center">Choosen Item</h6>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>Tent</td>
+                                <td>1 </td>
+                                <td class="text-right">$1520</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>CampFire</td>
+                                <td>1 </td>
+                                <td class="text-right">$1500</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>Light</td>
+                                <td>1 </td>
+                                <td class="text-right">$520</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-3 text-secondary h2">Camping's Shop Pay Complete</h1>
+        <div class="row text-center justify-content-center">
+            <div class="col-8 ">
+                <div class="alert alert-success alert-rounded" role="alert">
+                    Complete
+                </div>
+                <h5 class="mb-4">Payment Information</h5>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th width="100"></th>
+                            <th>Item Name</th>
+                            <th width="120">Number</th>
+                            <th width="120">Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://images.unsplash.com/photo-1506535995048-638aa1b62b77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=560"
+                                    class="img-fluid" alt=""></td>
+                            <td>Pro's Tent</td>
+                            <td>1 </td>
+                            <td class="text-right">$1520</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-right">Freight</td>
+                            <td class="text-right">
+                                <strong>$60</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-right">Sum</td>
+                            <td class="text-right">
+                                <strong>$1580</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5 class="mb-4">Personal Information</h5>
+                <table class="table">
+                    <tr>
+                        <th>Email</th>
+                        <td>ag3456***@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <td>Jack</td>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <td>1234****</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>East Taunton,MA 02718</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 Camping's Shop</li>
+                <li class="list-inline-item ">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Camping's Shop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-campground"></i>
+            Camping's Shop</a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-transparent dropdown-toggle btn-cart" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart text-dark fa-2x"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <!--dropdown 放在nav裡面不會自動計算位置-->
+            <div class="dropdown-menu dropdown-menu-right" style="min-width:300px">
+                <div class="px-4 py-3">
+                    <table class="table table-sm">
+                        <tbody>
+                            <h6 class="text-center">Choosen Item</h6>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?" >
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>Tent</td>
+                                <td>1</td> 
+                                <td class="text-right">$1520</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>CampFire</td>
+                                <td>1 </td>
+                                <td class="text-right">$1500</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>Light</td>
+                                <td>1 </td>
+                                <td class="text-right">$520</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="checkout.html" class="btn btn-primary btn-block">Pay</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end ">
+        <div class="container">
+            <div class="bg-lighter p-3 text-center ">
+                <h1 class="display-4 ">Camping's Shop</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <a href="#pane1" class="list-group-item list-group-item-action active" data-toggle="list">
+                        Tent
+                    </a>
+                    <a href="#pane2" class="list-group-item list-group-item-action" data-toggle="list">Camp Fire</a>
+                    <a href="#" class="list-group-item list-group-item-action">Camp Bed</a>
+                    <a href="#" class="list-group-item list-group-item-action">Food</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="pane1">
+                        <div class="row">
+                            <div class="col-md-4 mb-4 ">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 ">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary" style="border:2px solid rgb(161, 161, 161)">黑</a>
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">灰</a>
+                                            <a href="product.html" class="btn btn-outline-secondary" style="border:2px solid rgb(161, 161, 161)">白</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 ">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1519395612667-3b754d7b9086?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <a href="product.html" class="btn btn-outline-secondary btn-sm btn-block" style="border:2px solid rgb(161, 161, 161)">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 ">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1506535995048-638aa1b62b77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary" style="border:2px solid rgb(161, 161, 161)">黑</a>
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">灰</a>
+                                            <a href="product.html" class="btn btn-outline-secondary" style="border:2px solid rgb(161, 161, 161)">白</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 ">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1429270958905-78f90e2dca75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <a href="product.html" class="btn btn-outline-secondary btn-sm btn-block" style="border:2px solid rgb(161, 161, 161)">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 ">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1534880606858-29b0e8a24e8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <a href="product.html" class="btn btn-outline-secondary btn-sm btn-block" style="border:2px solid rgb(161, 161, 161)">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 ">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1555723962-671b30addd2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <a href="product.html" class="btn btn-outline-secondary btn-sm btn-block" style="border:2px solid rgb(161, 161, 161)">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane2">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1533243367503-0b7337004671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary" style="border:2px solid rgb(161, 161, 161)">黑</a>
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">灰</a>
+                                            <a href="product.html" class="btn btn-outline-secondary" style="border:2px solid rgb(161, 161, 161)">白</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1529091040172-b9becdf180fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <a href="product.html" class="btn btn-outline-secondary btn-sm btn-block" style="border:2px solid rgb(161, 161, 161)">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1477951324676-cd9dab85abd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary" style="border:2px solid rgb(161, 161, 161)">黑</a>
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">灰</a>
+                                            <a href="product.html" class="btn btn-outline-secondary" style="border:2px solid rgb(161, 161, 161)">白</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1526327833828-fedc258029ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <a href="product.html" class="btn btn-outline-secondary btn-sm btn-block" style="border:2px solid rgb(161, 161, 161)">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1510374629110-439facca79ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <a href="product.html" class="btn btn-outline-secondary btn-sm btn-block" style="border:2px solid rgb(161, 161, 161)">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img src="https://images.unsplash.com/photo-1509942231891-0485b624d9da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <a href="product.html" class="btn btn-outline-secondary btn-sm btn-block" style="border:2px solid rgb(161, 161, 161)">購買</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are You Sure To Delete Order? 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn btn-outline-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 Camping's Shop</li>
+                <li class="list-inline-item ">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            //刪除 Modal 事件
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+                var modal = $(this);
+                modal.find('.modal-title').text('Sure To ' + title);
+            });
+        });
+    </script>
+</body>
+
+</html>

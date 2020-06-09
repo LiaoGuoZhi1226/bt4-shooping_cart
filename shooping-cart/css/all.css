@@ -1,0 +1,38 @@
+.dropdown-toggle::after{
+    display: none !important;
+}
+.btn-cart{
+    position: relative !important;
+}
+.btn-cart .badge{
+    position:absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+.dropdown-menu-right{
+    right: 0;
+    left: auto;
+}
+.jumbotron-bg{
+    background-image: url(https://images.unsplash.com/photo-1528150206408-07a3f3025282?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=560);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+.bg-lighter{
+    background-color: rgba(255,255,255,.45);
+}
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0,0,0,.16);
+    transition: box-shadow 0.5s;
+}
+.box-shadow:hover{
+    box-shadow: 0 4px 10px rgba(0,0,0,.24)
+}
+.btn.disabled{
+    pointer-events: none;
+}
+.alert-rounded{
+    border-radius: 50px !important;
+}

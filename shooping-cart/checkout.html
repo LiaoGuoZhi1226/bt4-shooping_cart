@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Camping's Shop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-campground"></i>
+            Camping's Shop</a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-transparent dropdown-toggle btn-cart" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart text-dark fa-2x"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <!--dropdown 放在nav裡面不會自動計算位置-->
+            <div class="dropdown-menu dropdown-menu-right" style="min-width:300px">
+                <div class="px-4 py-3">
+                    <table class="table table-sm">
+                        <tbody>
+                            <h6 class="text-center">Choosen Item</h6>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>Tent</td>
+                                <td>1 </td>
+                                <td class="text-right">$1520</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>CampFire</td>
+                                <td>1 </td>
+                                <td class="text-right">$1500</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>Light</td>
+                                <td>1 </td>
+                                <td class="text-right">$520</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-3 text-secondary h2">Camping's Shop Check</h1>
+        <div class="form-row text-center">
+            <div class="col-sm col-12">
+                <div class="alert alert-success alert-rounded" role="alert">
+                    1. KeyIn Order Information
+                </div>
+            </div>
+            <div class="col-sm col-12">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    2. Paymant
+                </div>
+            </div>
+            <div class="col-sm col-12">
+                <div class="alert alert-light alert-rounded" role="alert">
+                    3. Complete
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Appear Cart Detail
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th width="30"></th>
+                                <th width="100"></th>
+                                <th>Item Name</th>
+                                <th width="100">Number</th>
+                                <th width="80">Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="Delete Pro's Tent?">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td><img src="https://images.unsplash.com/photo-1506535995048-638aa1b62b77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=560"
+                                        class="img-fluid" alt=""></td>
+                                <td>Pro's Tent</td>
+                                <td>1 </td>
+                                <td class="text-right">$1520</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-right">Freight</td>
+                                <td class="text-right">
+                                    <strong>$60</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-right">Sum</td>
+                                <td class="text-right">
+                                    <strong>$1580</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <form class="needs-validation mt-5 " novalidate>
+                    <h5 class="text-center pb-4">Customer Information</h5>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Name</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Name" required>
+                            <div class="invalid-feedback">
+                                Please provide Name.
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Email</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Email"
+                                required>
+                            <div class="invalid-feedback">
+                                Please provide Email.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <select class="form-control" name="inputCity" id="inputCity" required>
+                                <option value=""  selected disabled >...</option>
+                                <option value="NY">NewYork</option>
+                                <option value="Washington">Washington</option>
+                                <option value="Washington">New Jersey</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide City.
+                            </div>
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip" required>
+                            <div class="invalid-feedback">
+                                Please provide Zip.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            Please provide Address.
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="index.html" class="btn btn-secondary btn-sm mr-3">Continue to buy</a>
+                        <button type="submit" class="btn btn-primary btn-sm mr-3">Ensure Payment</button>
+                        <a  class="btn btn-primary btn-sm" href="finish.html">Complete</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are You Sure To Delete Order?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn btn-outline-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 Camping's Shop</li>
+                <li class="list-inline-item ">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            //刪除 Modal 事件
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+                var modal = $(this);
+                modal.find('.modal-title').text('Sure To ' + title);
+            });
+        });
+    </script>
+</body>
+
+</html>
